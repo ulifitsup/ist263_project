@@ -178,7 +178,7 @@
             const memberId = document.getElementById("bor_member_id").value;
             const isbn = document.getElementById("bor_ISBN").value;
             
-            axios.post('/api/borrow_book', {
+            axios.post('/api/book_borrow', {
                 token: token,
                 member_id: memberId,
                 ISBN: isbn
@@ -194,7 +194,7 @@
             const memberId = document.getElementById("ret_member_id").value;
             const isbn = document.getElementById("ret_ISBN").value;
             
-            axios.post('/api/return_book', {
+            axios.post('/api/book_return', {
                 token: token,
                 member_id: memberId,
                 ISBN: isbn
