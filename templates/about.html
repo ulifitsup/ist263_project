@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>
+            Xinglai Pang IST 263 Project
+        </title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./about">Abous us</a></li>
+                    <li><a href="./lab">Lab</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Main Container -->
+        <div class="about-container">
+            <!-- Primary Module -->
+            <section class="main-about">
+                <h1>About SimbaChain</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+                <div class="buttons">
+                    <button class="btn-primary">Get Started →</button>
+                    <button class="btn-secondary">Learn more</button>
+                </div>
+            </section>
+
+            <!-- Other container -->
+            <div class="about-sections">
+                <!-- mod 1 -->
+                <section class="about-card">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='SIMBA_512x512.png') }}" alt="Placeholder">
+                    </div>
+                    <div class="content">
+                        <h2>About IST 408/608</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+                        <div class="buttons">
+                            <button class="btn-primary">Get Started →</button>
+                            <button class="btn-secondary">Learn more</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- mod 2 -->
+                <section class="about-card">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='CFW07448.jpg') }}" alt="Placeholder">
+                    </div>
+                    <div class="content">
+                        <h2>Xinglai Pang</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+                        <div class="buttons">
+                            <button class="btn-primary">Get Started →</button>
+                            <button class="btn-secondary">Learn more</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- mod 3 -->
+                <section class="about-card">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='lee_mcknight.jpg') }}" alt="Placeholder">
+                    </div>
+                    <div class="content">
+                        <h2>Lee McKnight</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+                        <div class="buttons">
+                            <button class="btn-primary">Get Started →</button>
+                            <button class="btn-secondary">Learn more</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>
