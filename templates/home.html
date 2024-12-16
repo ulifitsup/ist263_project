@@ -26,8 +26,11 @@
         <div id="auth-section" class="text-center">
             <form onsubmit="authToken(event)" class="mb-4">
                 <h2>Authorization</h2>
+                <label for="client_id" class="form-label">Client ID</label>
                 <input type="text" id="client_id" class="form-control" placeholder="Client ID" required>
+                <label for="client_secret" class="form-label">Client Secret</label>
                 <input type="text" id="client_secret" class="form-control mt-2" placeholder="Client Secret" required> 
+                <label for="endpoint" class="form-label">Endpoint</label>
                 <input type="text" id="endpoint" class="form-control mt-2" placeholder="v2/apps/XXXXX/XXXXX" required> 
                 <button type="submit" class="btn btn-primary">Get Authorization Token</button>
             </form>
@@ -43,46 +46,57 @@
         <div id="function-sections" style="display: none;">
             <h2>Register Member</h2>
             <form onsubmit="registerMember(event)" class="mb-4">
+                <label for="reg_member_name" class="form-label">Member Name</label>
                 <input type="text" id="reg_member_name" class="form-control" placeholder="Member Name" required>
+                <label for="reg_member_id" class="form-label">Member ID</label>
                 <input type="text" id="reg_member_id" class="form-control mt-2" placeholder="Member ID" required>
                 <button type="submit" class="btn btn-success mt-2">Register Member</button>
             </form>
 
             <h2>Member Deactive</h2>
             <form onsubmit="deactiveMember(event)" class="mb-4">
+                <label for="dac_member_id" class="form-label">Member ID</label>
                 <input type="text" id="dac_member_id" class="form-control" placeholder="Member ID" required>
                 <button type="submit" class="btn btn-success mt-2">Add Book</button>
             </form>
 
             <h2>Add New Book</h2>
             <form onsubmit="addNewBook(event)" class="mb-4">
+                <label for="add_book_name" class="form-label">Book Name</label>
                 <input type="text" id="add_book_name" class="form-control" placeholder="Book Name" required>
+                <label for="add_ISBN" class="form-label">ISBN</label>
                 <input type="text" id="add_ISBN" class="form-control mt-2" placeholder="ISBN" required>
                 <button type="submit" class="btn btn-success mt-2">Add Book</button>
             </form>
 
             <h2>Borrow Book</h2>
             <form onsubmit="borrowBook(event)" class="mb-4">
+                <label for="bor_member_id" class="form-label">Member ID</label>
                 <input type="text" id="bor_member_id" class="form-control" placeholder="Member ID" required>
+                <label for="bor_ISBN" class="form-label">ISBN</label>
                 <input type="text" id="bor_ISBN" class="form-control mt-2" placeholder="ISBN" required>
                 <button type="submit" class="btn btn-success mt-2">Add Book</button>
             </form>
 
             <h2>Return Book</h2>
             <form onsubmit="returnBook(event)" class="mb-4">
+                <label for="ret_member_id" class="form-label">Member ID</label>
                 <input type="text" id="ret_member_id" class="form-control" placeholder="Member ID" required>
+                <label for="ret_ISBN" class="form-label">ISBN</label>
                 <input type="text" id="ret_ISBN" class="form-control mt-2" placeholder="ISBN" required>
                 <button type="submit" class="btn btn-success mt-2">Add Book</button>
             </form>
 
             <h2>Get Book</h2>
             <form onsubmit="getBook(event)" class="mb-4">
+                <label for="isbn_query" class="form-label">ISBN</label>
                 <input type="text" id="isbn_query" class="form-control" placeholder="ISBN" required>
                 <button type="submit" class="btn btn-success mt-2">Get Book</button>
             </form>
 
             <h2>Get Member</h2>
             <form onsubmit="getMember(event)" class="mb-4">
+                <label for="member_id_query" class="form-label">Member ID</label>
                 <input type="text" id="member_id_query" class="form-control" placeholder="Member ID" required>
                 <button type="submit" class="btn btn-success mt-2">Get Member</button>
             </form>
