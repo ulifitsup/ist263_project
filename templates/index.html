@@ -22,10 +22,10 @@
         <div class="container">
             <div class="content">
                 <h1>SimbaChain Lab 3</h1>
-                <p>A little bit introduction about the lab</p>
+                <p>This is Lab 3 for IST 408/608 Blockchain Management Course! This lab picturing a imaginary decentralized Labary management system, students will be using SimbaChain API to complete their first decentralized app.</p>
                 <div class="buttons">
-                    <button class="btn-primary">Get Started →</button>
-                    <button class="btn-secondary">Learn more</button>
+                    <button class="btn-primary" onclick="location.href='{{ url_for('lab') }}'">Get Started →</button>
+                    <button class="btn-secondary" onclick="location.href='{{ url_for('about') }}'">Learn more</button>
                 </div>
             </div>
             <div class="image">
@@ -33,7 +33,13 @@
             </div>
         </div>
     </body>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Created by Xinglai Pang © 2024</p>
+            <div class="social-links">
+                <a href="https://github.com/ulifitsup" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/xinglai-pang-ul0110901/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </footer>
 </html>

@@ -1,10 +1,13 @@
 /* styles.css */
-body {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #0D1117;
     color: #F0F6FC;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -60,6 +63,36 @@ body {
     box-shadow: 0 4px 8px rgba(88, 166, 255, 0.2); /* Adding shadow */
     border: 1px solid #58A6FF; /* Adding border */
     border-radius: 10px; /* Adding border radius */
+    flex: 1; /* Flexbox 1 */
+}
+
+.container-main {
+    display: flex; /* Using Flexbox creating horizontal layout */
+    gap: 20px; /* Space between image and content */
+    justify-content: space-between; /* Aligning items to the left and right */
+    align-items: center; /* Aligning items vertically */
+    padding: 20px; /* Padding around the container */   
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 50px auto; /* Centering the container */
+    background-color: #1E293B; /* Background color */
+    box-shadow: 0 4px 8px rgba(88, 166, 255, 0.2); /* Adding shadow */
+    border: 1px solid #58A6FF; /* Adding border */
+    border-radius: 10px; /* Adding border radius */
+}
+
+#auth-section {
+    margin: 30px; /* Padding around the container */
+    display: flex; /* Using Flexbox creating horizontal layout */
+    flex-direction: column; /* Flex direction column */
+    align-items: center; /* Aligning items vertically */
+    justify-content: center; /* Aligning items horizontally */
+}
+
+#auth-section form {
+    display: flex; /* Using Flexbox creating horizontal layout */
+    flex-direction: column; /* Flex direction column */
+    align-items: center; /* Aligning items vertically */
+    gap: 15px;  /* Space between form elements */
 }
 
 .content {
@@ -119,6 +152,10 @@ button {
 .image img {
     width: 100%; /* Image width 100% */
     border-radius: 10px; /* Adding border radius */
+}
+
+.large-margin {
+    margin: 20px; /* Large padding */
 }
 
 /* About Section */
@@ -183,4 +220,44 @@ button {
     font-size: 1rem;
     margin-bottom: 20px;
     color: #F0F6FC;
+}
+
+/* Footer */
+.footer {
+    background-color: #1E293B;
+    color: #F0F6FC;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    border-top: 2px solid #58A6FF;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #58A6FF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1E90FF;
 }
